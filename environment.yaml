@@ -1,0 +1,27 @@
+name: egta-kd
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - pytorch=1.12.1
+  - torchvision=0.13.1
+  - cudatoolkit=11.3
+  - numpy
+  - scikit-learn
+  - scikit-image
+  - matplotlib
+  - opencv-python
+  - simpleitk
+  - tqdm
+  - pip:
+    - transformers==4.30.2
+    - einops
+    - ftfy
+    - regex
+    - sentencepiece
+    - pudb
+    - wandb
+    - -e git+https://github.com/openai/CLIP.git@main#egg=clip
+    - -e .
