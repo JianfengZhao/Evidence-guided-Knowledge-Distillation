@@ -20,14 +20,17 @@ If you find this work helpful, please consider citing our paper.
 ## 📝 Citation
 
 ## 📦 Installation
+
+We recommend creating the environment via `conda` using the provided `environment.yaml`:
+
+```bash
 # Clone the repository
 git clone https://github.com/JianfengZhao/Evidence-guided-Knowledge-Distillation.git
 cd Evidence-guided-Knowledge-Distillation
 
-# Create and activate a new environment
-conda create -n egta-kd python=3.8 -y
-conda activate egta-kd
+# Create the environment
+conda env create -f environment.yaml
 
-# Install all dependencies
-pip install -r requirements.txt
+# Activate it
+conda activate egta-kd
 
